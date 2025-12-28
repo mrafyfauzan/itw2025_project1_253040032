@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+     <link rel="stylesheet" href="css/project1.css">
+
+    
+     <!-- fonts poppins -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>MY PORTOFOLLIO</title>
+</head>
+<body>
+    <header>
+    <!-- awal navbar -->
+        
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">MY PORTOFOLLIO</a>
+                </div>
+                <ul class="links">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skil">skil</a></li>
+                    <li><a href="#project">project</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    </ul>
+                    <a href="#" class="action-btn">GITHUB</a>
+                    <div class="toggle-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+            </div>
+            <ul class="dropdown-menu">
+                <li><a href="#home">home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skil">skil</a></li>
+                    <li><a href="#project">project</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#" class="action-btn">GITHUB</a></li>
+            </ul>
+        <script>
+            const toggle8tn = document.querySelector('.toggle-btn')
+            const toggle8tnIcon = document.querySelector('.toggle-btn i')
+            const dropdowMenu = document.querySelector('.dropdown-menu')
+
+            toggle8tn.onclick = function (){
+                dropdowMenu.classList.toggle("open")
+                const isOpen = dropdowMenu.classList.contains('open')
+
+                toggle8tnIcon.className = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+            }
+        </script>
+     <!-- akhir navbar -->
+      <!-- hero -->
+       <div class="hero" id="home">
+        <div class="container">
+            <div class="hero-box">
+                <h1>
+                    Hi Folks, saya <span id="element"></span><br>
+                    Web develover & programer 
+                </h1>
+                
+                <img src="img/aing.jpg" alt="hero image">
+               
+            </div>
+        </div>
+       </div>
+      <!-- hero -->
+       <!-- animasi -->
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      </header>
+
+      <!-- About -->
+       <div class="About" id="about">
+        <div class="container">
+            <h1 data-aos="fade-up" data-aos-duration="1000">ABOUT</h1>
+            <div class="About-box">
+                <div class="box">
+                    <div class="foto-About" data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000">
+                    <img src="./img/saya.jpeg" class="About-belakang">                       
+                    </div>
+                <div class="About-text">
+                <p data-aos="fade-left" data-aos-duration="1000">Nama saya <span> Mochamad Rafy Fauzan</span>, mahasiswa Universitas Pasundan (UNPAS) dengan minat di bidang Teknologi Informasi (IT). Saya tertarik pada pengembangan teknologi, pemecahan masalah berbasis sistem, serta penerapan solusi digital yang efektif dan efisien.
+                Saya terbiasa belajar hal baru, mengerjakan tugas maupun proyek secara terstruktur, serta mampu bekerja secara mandiri maupun dalam tim. Melalui portofolio ini, saya menampilkan beberapa karya dan pengalaman yang mencerminkan kemampuan serta proses belajar saya di bidang IT.</p>
+            </div>
+        </div>
+       </div>
+    </div>
+     <div class="kolom">
+        <div class="container">
+            <ul class="gallery">
+                <li>
+                    <a href="#gambar-1">
+                        <img src="./img/thubms/foto11.jpg" alt="bermain gitar">
+                         <span>gitar</span>
+                    </a>
+
+                    <div class="overlay" id="gambar-1">
+                        <a href="#!" class="close">x close</a>
+                        <img src="./img/foto1.jpg" alt="bermain gitar">
+
+                    </div>
+
+                </li>
+                <li>
+                    <a href="#gambar-2">
+                        <img src="./img/thubms/foto22.jpg" alt="bermain bola">
+                         <span>bola</span>
+                    </a>
+                    
+                    <div class="overlay" id="gambar-2">
+                        <a href="#!" class="close">x close</a>
+                        <img src="./img/foto2.jpg" alt="bermain bola">
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#gambar-3">
+                        <img src="./img/thubms/foto33.jpg" alt="mendaki">
+                         <span>mendaki</span>
+                    </a>
+                    <div class="overlay" id="gambar-3">
+                        <a href="#!" class="close">x close</a>
+                        <img src="./img/foto3.jpg" alt="mendaki">
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#gambar-4">
+                        <img src="./img/thubms/foto44.jpg" alt="silat">
+                         <span>silat</span>
+                    </a>
+
+                    <div class="overlay" id="gambar-4">
+                        <a href="#!" class="close">x close</a>
+                        <img src="./img/foto4.jpg" alt="silat">
+
+                    </div>
+                </li>
+
+             </div>
+
+       
+                  
+                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+    <div class="project" id="project">
+        <div class="hasil">
+            <h3 data-aos="fade-up" data-aos-duration="1000">DAFTAR PROJECT</h3>
+            <div class="project-box">
+                <div class="box" data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <img src="img/pro1.png" alt="project image">
+                    <div class="project-desc">
+                        <h4>Multi-Page Website Layout</h4>
+                        <p>Proyek pembuatan tata letak website multi-halaman yang dirancang dengan struktur rapi dan navigasi yang jelas menggunakan HTML dan CSS.</p>
+                        <div class="project-btn">
+                            <a href="#">Lihat website</a>
+                            <a href="#">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                   data-aos-duration="2000">
+                    <img src="img/pro2.png" alt="project image">
+                    <div class="project-desc">
+                        <h4>Desain Layout Website</h4>
+                        <p>Proyek latihan merancang tampilan layout website yang responsif dan modern dengan fokus pada kerapihan struktur dan kenyamanan pengguna.</p>
+                        <div class="project-btn">
+                            <a href="#">Lihat website</a>
+                            <a href="#">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-aos="flip-left"
+                 data-aos-easing="ease-out-cubic"
+                 data-aos-duration="2000">
+                    <img src="img/pro3.png" alt="project image">
+                    <div class="project-desc">
+                        <h4>Web Layout Collection</h4>
+                        <p>Kumpulan desain tata letak website sebagai hasil eksplorasi dan latihan frontend menggunakan HTML dan CSS.</p>
+                        <div class="project-btn">
+                            <a href="#">Lihat website</a>
+                            <a href="#">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-aos="flip-left"
+                     data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000">
+                    <img src="img/pro4.png" alt="project image">
+                    <div class="project-desc">
+                        <h4>UI Web Design Practice</h4>
+                        <p>Proyek latihan desain antarmuka web dan pengaplikasian dengan memperhatikan visual, konsistensi elemen, dan pengalaman pengguna.</p>
+                        <div class="project-btn">
+                            <a href="#">Lihat website</a>
+                            <a href="#">Github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skil" id="skil">
+                    <h5 data-aos="fade-up" data-aos-duration="1000">SKILS</h5>
+                    <p>berikut ini beberapa tools yang dipakai</p>
+                    <div class="tools">
+                        <div class="tools-box" data-aos="fade-right">
+                            <img src="./img/vscode.png" alt="Tools Image">
+                            <div class="tools-desc">
+                                <h7>Visual Studio Code</h7>
+                                
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-left">
+                            <img src="./img/js.png" alt="Tools Image">
+                            <div class="tools-desc">
+                                <h7>Java Script</h7>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-right">
+                            <img src="./img/canva.png" alt="Tools Image">
+                            <div class="tools-desc">
+                                <h7>Canva</h7>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-left">
+                            <img src="./img/bootstrap.png" alt="Tools Image">
+                            <div class="tools-desc">
+                                <h7>Bootstrap</h7>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-right">
+                            <img src="./img/github.png" alt="Tools Image">
+                            <div class="tools-desc">
+                                <h7>Github</h7>
+                            </div>
+                        </div>
+                        <div class="tools-box" data-aos="fade-left">
+                            <img src="./img/tailwind.png" alt="Tools Image">
+                            <div class="tools-desc">
+                                <h7>Talwind</h7>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <div class="content" id="contact">
+        <h6 data-aos="fade-up" data-aos-duration="1000">CONTACT</h6>
+        <form action="mailto:mrafyfauzan@gmail.com" method="POST" enctype="text/plain">
+            <label>Nama</label>
+            <input type="text" name="nama" placeholder="masukan email kamu" required>
+            <label>Email</label>
+            <input type="text" name="nama" placeholder="masukan email kamu" required>
+            <label>Pesan</label>
+            <input type="text" name="nama" placeholder="masukan email kamu" required><br>
+
+            <button type="submit">kirim Pesan</button>
+        </form>
+    </div>
+     <div class="sosial-media">
+        <p class="end-text">Thank for scrolling, That's All Folks</p>
+                    <div class="icon-sosmed">
+                    <a href="https://www.instagram.com/mrffznn/?__pwa=1" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@rffzann" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    
+                    <a href="https://discordapp.com/users/rflaage" target="_blank">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                    
+                    <a href="https://wa.me/+6281224699830" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    </div>
+                </div>
+      <!-- About -->
+    <!-- script JS -->
+     <script src="project1.js"></script>
+     <!-- type JS -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+    var typed = new Typed('#element', {
+      strings: ["Mochamad","Rafy", "Fauzan"],
+      typeSpeed: 300,
+      loop:true,
+      backSpeed:100,
+      showCursor: true,
+      backDelay: 1000,
+    });
+  </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
